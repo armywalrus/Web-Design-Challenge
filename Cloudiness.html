@@ -11,32 +11,79 @@
 
 <body>
 
-  <div class="container">
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="https://armywalrus.github.io/Web-Design-Challenge">Home</a>
-        </li>
-        <li>
-          <a href="Wind_Speed.html">Wind Speed</a>
-        </li>
-        <li>
-          <a href="Temperature.html">Temperature</a>
-        </li>
-        <li>
-          <a href="Humidity.html">Humidity</a>
-        </li>
-        <li>
-          <a href="Cloudiness.html">Cloudiness</a>
-        </li>
-        <li>
+  <!-- JS function for dropdown box -->
+  <script>
+    //toggle between hiding and showing the dropdown content
+    function Dropdown() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script> 
+  
+    <div class="container">
+      <nav class="navbar">
+        <a class="home" href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Global Weather Visualization</a>
+        <ul>
+          <li>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          <li>
+        </ul>
+        <div class="dropdown">
+          <button onclick="Dropdown()" class="dropbtn">Plots</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="Wind_Speed.html">Wind Speed</a>
+            <a href="Temperature.html">Temperature</a>
+            <a href="Humidity.html">Humidity</a>
+            <a href="Cloudiness.html">Cloudiness</a>
+          </div>
+        </div> 
           <a href="Comparisons.html">Comparisons</a>
-        </li>
-        <li>
           <a href="Data.html">Data</a>
-        </li>
-      </ul>
-    </nav>
+        
+      </nav>
+  
     <header class="header">
       <h1>Latitude Vs. Cloudiness</h1>
     </header>

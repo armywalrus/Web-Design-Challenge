@@ -23,17 +23,37 @@ p {
 
 /* Giving our navbar some padding and a background color */
 .navbar {
-  height: 58px;
+  height: 65px;
   padding: 5px;
   background: #5191fd;
 }
 
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar a {
+  display: inline-block;
+  padding: 8px;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  background: #5191fd;
+  border-radius: 3px;
+}
+
 .navbar li {
   display: inline-block;
   padding: 8px;
   margin-right: 5px;
   margin-left: 5px;
+  cursor: pointer;
+  background: #5191fd;
+  border-radius: 3px;
+}
+
+.home {
+  display: inline-block;
+  padding: 4px;
+  margin-right: 0px;
+  margin-left: 0px;
   cursor: pointer;
   background: #fff;
   border-radius: 3px;
@@ -160,7 +180,12 @@ span.popuptextthree {
 }
 
 /* Getting rid of the default link styles here */
-.navbar li a {
+.navbar a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar a:hover {
   color: #000;
   text-decoration: none;
 }
@@ -186,3 +211,49 @@ span.popuptextthree {
   margin-right: 100px;
   margin-left: 100px;
 }
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #5191fd;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #5191fd;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  background-color: #fff;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
