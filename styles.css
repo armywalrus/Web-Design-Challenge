@@ -18,9 +18,6 @@ h3 {
   background: #5191fd;
 }
 
-.image {
-  font-size: 15px;
-}
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
 .navbar li {
   display: inline-block;
@@ -30,6 +27,70 @@ h3 {
   cursor: pointer;
   background: #fff;
   border-radius: 3px;
+}
+
+/* Image titles */
+.image {
+  font-size: 15px;
+}
+
+/* to resize images when browser window changes size */
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: #5191fd;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 10000;
+  top: 200px;
+  left: 200px;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+/* .popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+} */
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
 
 /* Getting rid of the default link styles here */
