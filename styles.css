@@ -23,9 +23,10 @@ p {
 
 /* Giving our navbar some padding and a background color */
 .navbar {
-  height: 65px;
+  height: 75px;
   padding: 5px;
   background: #5191fd;
+  position: relative;
 }
 
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
@@ -70,7 +71,7 @@ p {
   text-align: center;
 }
 
-/* to resize images when browser window changes size */
+/* to resize when browser window changes size */
 .responsive {
   width: 100%;
   height: auto;
@@ -86,7 +87,7 @@ p {
 /* The actual popup (appears on top) */
 .popup .popuptextone {
   visibility: hidden;
-  width: 275px;
+  width: 300px;
   background-color: #5191fd;
   color: #fff;
   text-align: center;
@@ -108,7 +109,7 @@ span.popuptextone {
 /* The actual popup (appears on top) */
 .popup .popuptexttwo {
   visibility: hidden;
-  width: 275px;
+  width: 300px;
   background-color: #5191fd;
   color: #fff;
   text-align: center;
@@ -130,7 +131,7 @@ span.popuptexttwo {
 /* The actual popup (appears on top) */
 .popup .popuptextthree {
   visibility: hidden;
-  width: 275px;
+  width: 300px;
   background-color: #5191fd;
   color: #fff;
   text-align: center;
@@ -257,3 +258,62 @@ span.popuptextthree {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #5191fd;
+  color: white;
+  text-decoration: none;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #ddd;
+  color: black;
+  text-decoration: none;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 6px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
