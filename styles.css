@@ -9,6 +9,16 @@ h1 {
 
 h3 {
   font-size: 30px;
+
+}
+
+p {
+  font-size: 20px;
+  display: inline-block;
+  padding: 25px;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: left;
 }
 
 /* Giving our navbar some padding and a background color */
