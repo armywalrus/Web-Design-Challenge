@@ -95,7 +95,7 @@ p {
   margin: auto;
   position: absolute;
   z-index: 10000;
-  top: 80;
+  top: 0;
   right: 0;
   left: 290px;
   }
