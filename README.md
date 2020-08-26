@@ -1,3 +1,6 @@
+
+View website at <a href="https://armywalrus.github.io/Web-Design-Challenge/" target="_blank">https://armywalrus.github.io/Web-Design-Challenge/</a>
+
 Website Breakdown:
 
 This website consists of 7 pages total, including:
