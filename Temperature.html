@@ -15,25 +15,25 @@
     <nav class="navbar">
       <ul>
         <li>
-          <a href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank"> Home</a>
+          <a href="https://armywalrus.github.io/Web-Design-Challenge">Home</a>
         </li>
         <li>
-          <a href="Wind_Speed.html" target="_blank">Wind Speed</a>
+          <a href="Wind_Speed.html">Wind Speed</a>
         </li>
         <li>
-          <a href="Temperature.html" target="_blank">Temperature</a>
+          <a href="Temperature.html">Temperature</a>
         </li>
         <li>
-          <a href="Humidity.html" target="_blank">Humidity</a>
+          <a href="Humidity.html">Humidity</a>
         </li>
         <li>
-          <a href="Cloudiness.html" target="_blank"">Cloudiness</a>
+          <a href="Cloudiness.html">Cloudiness</a>
         </li>
         <li>
-          <a href="Comparisons.html" target="_blank">Comparisons</a>
+          <a href="Comparisons.html">Comparisons</a>
         </li>
         <li>
-          <a href="Data.html" target="_blank">Data</a>
+          <a href="Data.html">Data</a>
         </li>
       </ul>
     </nav>
@@ -41,22 +41,113 @@
       <h1>Latitude Vs. Temperature</h1>
     </header>
     <main>
-      <section class="posts">
-        <article class="post">
-          <h3 class = "image"><a href="https://www.thebeatles.com/" target="_blank">
-            <img src="latitude_vs_temperature.png" alt="Latitude vs. Temperature" width="432" height="288">
-            </a>Latitude vs. Temperature as of 7/23/2020</h3>
-          <h3 class = "image"><a href="https://www.thebeatles.com/" target="_blank">
-            <img src="northern_latitude_vs_temperature.png" alt="Northern Hemisphere" width="432" height="288">
-            </a>Latitude vs. Temperature: Northern Hemisphere as of 7/23/2020</h3>
-          <h3 class = "image"><a href="https://www.thebeatles.com/" target="_blank">
-            <img src="southern_latitude_vs_temperature.png" alt="Southern Hemisphere" width="432" height="288">
-            </a>Latitude vs. Temperature: Southern Hemisphere as of 7/23/2020</h3> 
-        </article>
-      </section>
-    </main>
+      
+<!-- JS function for popup boxes on images -->
+<script>
+  // When the user clicks on <div>, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
+  // When the user clicks on <div>, open the popup
+  function myFunctionTwo() {
+    var popup = document.getElementById("myPopupTwo");
+    popup.classList.toggle("show");
+  }
+
+  // When the user clicks on <div>, open the popup
+    function myFunctionThree() {
+      var popup = document.getElementById("myPopupThree");
+      popup.classList.toggle("show");
+    }
+    </script>
+
+
+<!-- content - summary paragraph and images -->
+<div class="container">
+ <!-- for spacing--> 
+<div class="row">
+  <div class="col-md-12">
+    <br></br>
   </div>
-  
+</div>
+    
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Summary: Latitude Vs. Temperature</h3>
+    </div>
+
+    <div class="col-md-6">
+      <h3>Visualizations</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+    </div>
+
+    <div class="col-md-6">
+      <h3 class="click">Click on an image for details.</h3>
+    </div>
+  </div>
+
+<!-- summary paragraph -->   
+<div class="row">
+  <div class="col-md-6">
+    <p>The purpose of this project was to pull weather data from the OpenWeather API in order to generate plots that show how weather patterns change as proximity to the equator increases.
+      Four factors were examined: Wind Speed, Temperature, Cloudiness, and Humidity. This shows the comparison of latitude versus temperature. 
+      As the visualizations show, temperature increases as one moves closer to the equator.
+    </p>
+  </div>
+
+<!-- main image with popup-->  
+  <div class="col-md-6">
+    <h3 class = "image">
+      <div class="popup" onclick="myFunction()"><img class = "responsive" src="latitude_vs_temperature.png" alt="Latitude vs. Temperature" width="432" height="288">
+        <span class="popuptextone" id="myPopup">This visualization shows a sharp decrease in temperature as one gets farther away from the equator.</span>
+      </div>
+        <br></br>
+        Latitude vs. Temperature as of 7/23/2020</h3>
+  </div>
+</div>
+
+<!-- for spacing--> 
+<div class="row">
+  <div class="col-md-12">
+    <br></br>
+  </div>
+</div>
+
+<!-- supplementary images with popups--> 
+<div class="row">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-3">
+  </div>
+
+  <div class="col-md-3">
+    <h3 class = "image">
+      <div class="popup" onclick="myFunctionTwo()"><img class = "responsive" src="northern_latitude_vs_temperature.png" alt="Northern Hemisphere" width="432" height="288">
+        <span class="popuptexttwo" id="myPopupTwo">This visualization shows that temperatures significantly decrease as one moves further north.</span>
+      </div>
+          Latitude vs. Temperature: Northern Hemisphere as of 7/23/2020</h3>
+    </div>
+
+      <div class="col-md-3">
+        <h3 class = "image">
+          <div class="popup" onclick="myFunctionThree()"><img class = "responsive" src="southern_latitude_vs_temperature.png" alt="Southern Hemisphere" width="432" height="288">
+            <span class="popuptextthree" id="myPopupThree">This visualization demonstrates that temperatures in the Southern Hemisphere show a significant increase as one moves away from the Northern Hemisphere.</span>
+          </div>
+          Latitude vs. Temperature: Southern Hemisphere as of 7/23/2020</h3>
+      </div>
+    
+    </div>
+  </div>
+
+</main>
+</div>
+
 </body>
 
 </html>

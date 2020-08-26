@@ -9,7 +9,7 @@ h1 {
 
 h3 {
   font-size: 30px;
-
+  text-align: center;
 }
 
 p {
@@ -42,6 +42,12 @@ p {
 /* Image titles */
 .image {
   font-size: 15px;
+}
+
+/* image text to click */
+.click {
+  font-size: 15px;
+  text-align: center;
 }
 
 /* to resize images when browser window changes size */
@@ -91,9 +97,9 @@ span.popuptextone {
   margin: auto;
   position: absolute;
   z-index: 10000;
-  top: 220px;
+  top: 1%;
   right: 0;
-  left: -180px;
+  left: -190px;
   }
 
 span.popuptexttwo {
@@ -113,7 +119,7 @@ span.popuptexttwo {
   margin: auto;
   position: absolute;
   z-index: 10000;
-  top: 220px;
+  top: 1%;
   right: 0;
   left: 180px;
   }
