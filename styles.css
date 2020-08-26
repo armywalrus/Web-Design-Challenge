@@ -18,6 +18,9 @@ h3 {
   background: #5191fd;
 }
 
+.image {
+  font-size: 15px;
+}
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
 .navbar li {
   display: inline-block;
