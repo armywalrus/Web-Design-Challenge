@@ -66,6 +66,14 @@ body {
   border-radius: 3px;
   position: relative;
 }
+/* to style the link to landing page on navbar */
+.home {
+  font-size: 17.5px;
+}
+
+.homesmall {
+  font-size: 17px;
+}
 
 /* Image titles */
 .image {
