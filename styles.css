@@ -1,8 +1,4 @@
-/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
-body {
-  background: #f1f1f1;
-}
-
+/* Adding font sizes for the h1 and h3 elements*/
 h1 {
   font-size: 80px;
 }
@@ -22,6 +18,16 @@ p {
   text-align: left;
 }
 
+/* formatting links in the p elements */
+p a {
+  color: green;
+  }
+
+p a:hover {
+  color: #5191fd;
+  text-decoration: none;
+}
+
 /* Background image*/
 body {
   background-image: url('humidity_heatmap.png');
@@ -30,7 +36,7 @@ body {
   background-size: cover;
   }
 
-/* Giving our navbar some padding and a background color */
+/* Giving navbar some padding and a background color */
 .navbar {
   height: 75px;
   padding: 5px;
@@ -38,7 +44,7 @@ body {
   position: relative;
 }
 
-/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line.*/
+/* Inline-block elements in the navbar so we can have multiple on the same line.*/
 .navbar a {
   display: inline-block;
   padding: 2px;
@@ -72,8 +78,13 @@ body {
   text-align: center;
 }
 
-/* to resize images when browser window changes size */
+/* to resize elements when browser window changes size */
 .responsive {
+  width: 100%;
+  height: auto;
+}
+
+#responsive {
   width: 100%;
   height: auto;
 }
@@ -169,7 +180,7 @@ span.popuptextthree {
   to {opacity:1 ;}
 }
 
-/* Getting rid of the default link styles here */
+/* Getting rid of default link styles in the navbar*/
 .navbar a {
   color: #000;
   text-decoration: none;
@@ -180,11 +191,10 @@ span.popuptextthree {
   text-decoration: none;
 }
 
-/* Styling the header, giving it a height, a background color, and some top padding */
+/* Styling the header, giving it a height and some top padding */
 .header {
   height: 100px;
   padding-top: 5px;
-  
   position: relative;
 }
 
@@ -307,12 +317,12 @@ div.content {
   }
 }
 
-/* On screens that are less than 400px, show dropbox and hide the navbar*/
+/* On screens that are more than 400px, hide menu dropdown*/
 #nav-select {
   visibility: hidden;
 }
 
-/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 600 pixels */
+/* Adding media queries to show the menu dropdown, change background color of and hide the navbar, when the screen is smaller than 600 pixels */
 @media (max-width: 600px) {
   .navbar li {
     padding: 10px;
@@ -338,6 +348,10 @@ div.content {
   .navbar button
   {
     visibility: hidden;
+  }
+
+  .navbar {
+    background: #5191fd;
   }
 
   #nav-select {
