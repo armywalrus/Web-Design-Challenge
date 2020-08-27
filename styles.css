@@ -38,6 +38,7 @@ p {
   cursor: pointer;
   background: #5191fd;
   border-radius: 3px;
+  position: relative;
 }
 
 .navbar li {
@@ -48,6 +49,7 @@ p {
   cursor: pointer;
   background: #5191fd;
   border-radius: 3px;
+  position: relative;
 }
 
 .home {
@@ -58,6 +60,7 @@ p {
   cursor: pointer;
   background: #fff;
   border-radius: 3px;
+  position: relative;
 }
 
 /* Image titles */
@@ -263,12 +266,16 @@ span.popuptextthree {
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 212px;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
   overflow: auto;
 }
+
+/* Display sidebar images on hover */
+a>div { display: none; }
+a:hover>div { display: block; }
 
 /* Sidebar links */
 .sidebar a {
@@ -355,3 +362,4 @@ div.content {
     visibility: visible;
   }
 }
+
