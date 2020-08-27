@@ -153,18 +153,6 @@ span.popuptextthree {
   max-width: 100%
 }
 
-/* Popup arrow */
-/* .popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-} */
-
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
   visibility: visible;
@@ -265,7 +253,7 @@ span.popuptextthree {
 /* The side navigation menu */
 .sidebar {
   margin: 0;
-  padding: 0;
+  padding: 5px;
   width: 150px;
   background-color: #f1f1f1;
   position: fixed;

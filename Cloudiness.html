@@ -33,72 +33,93 @@
     </script> 
 
     <!-- The sidebar -->
-  <div class="sidebar">
-    <a href="Wind_Speed.html">Wind Speed
-    <div><img src="latitude_vs_wind_speed.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
-    <a href="Temperature.html">Temperature
-    <div><img src="latitude_vs_temperature.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
-    <a href="Humidity.html">Humidity
-    <div><img src="latitude_vs_humidity.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
-    <a href="Cloudiness.html">Cloudiness
-    <div><img src="latitude_vs_cloudiness.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
-  </div>
-  
+    <div class="row">
+      <div class="col-md-4"></div>
+        <div class="sidebar">
+          <a href="Wind_Speed.html">Wind Speed
+          <div><img src="latitude_vs_wind_speed.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
+          <a href="Temperature.html">Temperature
+          <div><img src="latitude_vs_temperature.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
+          <a href="Humidity.html">Humidity
+          <div><img src="latitude_vs_humidity.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
+          <a href="Cloudiness.html">Cloudiness
+          <div><img src="latitude_vs_cloudiness.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The navbar -->
     <div class="container">
-      <nav class="navbar">
-        <a class="home" href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Global Weather Visualization</a>
-        <ul>
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-        </ul>
-        <div class="dropdown">
-          <button onclick="Dropdown()" class="dropbtn">Plots</button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="Wind_Speed.html">Wind Speed</a>
-            <a href="Temperature.html">Temperature</a>
-            <a href="Humidity.html">Humidity</a>
-            <a class="active" href="Cloudiness.html">Cloudiness</a>
-          </div>
-        </div> 
-          <a href="Comparisons.html">Comparisons</a>
-          <a href="Data.html">Data</a>
-        
-      </nav>
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-11">
+          <nav class="navbar">
+            <a class="home" href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Global Weather Visualization</a>
+            <ul>
+              <li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              <li>
+            </ul>
+            <div class="dropdown">
+              <button onclick="Dropdown()" class="dropbtn">Plots</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a class="active" href="Wind_Speed.html">Wind Speed</a>
+                <a href="Temperature.html">Temperature</a>
+                <a href="Humidity.html">Humidity</a>
+                <a href="Cloudiness.html">Cloudiness</a>
+              </div>
+            </div> 
+              <a href="Comparisons.html">Comparisons</a>
+              <a href="Data.html">Data</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
   
-    <header class="header">
-      <h1>Latitude Vs. Cloudiness</h1>
-    </header>
+    <!-- Header -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-11">
+          <header class="header">
+            <h1>Latitude Vs. Cloudiness</h1>
+          </header>
+        </div>
+      </div>
+    </div>
     <main>
     
 <!-- JS function for popup boxes on images -->
@@ -132,8 +153,10 @@
   </div>
 </div>
     
-  <div class="row">
-    <div class="col-md-6">
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-5">
       <h3>Summary</h3>
     </div>
 
@@ -153,7 +176,10 @@
 
 <!-- summary paragraph -->   
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-1">
+  </div>
+
+  <div class="col-md-5">
     <p>The purpose of this project was to pull weather data from the OpenWeather API in order to generate plots that show how weather patterns change as proximity to the equator increases.
       Four factors were examined: Wind Speed, Temperature, Cloudiness, and Humidity. This shows the comparison of latitude versus cloudiness. 
       As the visualizations show, cloudiness does not change much as you move closer to the equator.

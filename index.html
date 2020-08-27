@@ -31,97 +31,110 @@
     }
   }
   </script> 
-<div class="sidebar">
-  <a href="Wind_Speed.html">Wind Speed
-  <div><img src="latitude_vs_wind_speed.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
-  <a href="Temperature.html">Temperature
-  <div><img src="latitude_vs_temperature.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
-  <a href="Humidity.html">Humidity
-  <div><img src="latitude_vs_humidity.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
-  <a href="Cloudiness.html">Cloudiness
-  <div><img src="latitude_vs_cloudiness.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
-</div>
 
+   <!-- The sidebar -->
+   <div class="row">
+    <div class="col-md-4"></div>
+      <div class="sidebar">
+        <a href="Wind_Speed.html">Wind Speed
+        <div><img src="latitude_vs_wind_speed.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
+        <a href="Temperature.html">Temperature
+        <div><img src="latitude_vs_temperature.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
+        <a href="Humidity.html">Humidity
+        <div><img src="latitude_vs_humidity.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
+        <a href="Cloudiness.html">Cloudiness
+        <div><img src="latitude_vs_cloudiness.png" alt="Latitude vs. Wind Speed" width="108" height="72"></div></a>
+      </div>
+    </div>
+  </div>
 
-<!-- Page content -->
-<div class="content">
+  <!-- The navbar -->
   <div class="container">
-    <nav class="navbar">
-      <a class="home" href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Global Weather Visualization</a>
-      <ul>
-        <li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-        <li>
-      </ul>
-      <div class="dropdown">
-        <button onclick="Dropdown()" class="dropbtn">Plots</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="Wind_Speed.html">Wind Speed</a>
-          <a href="Temperature.html">Temperature</a>
-          <a href="Humidity.html">Humidity</a>
-          <a href="Cloudiness.html">Cloudiness</a>
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-11">
+        <nav class="navbar">
+          <a class="home" href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Global Weather Visualization</a>
+          <ul>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+          </ul>
+          <div class="dropdown">
+            <button onclick="Dropdown()" class="dropbtn">Plots</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a class="active" href="Wind_Speed.html">Wind Speed</a>
+              <a href="Temperature.html">Temperature</a>
+              <a href="Humidity.html">Humidity</a>
+              <a href="Cloudiness.html">Cloudiness</a>
+            </div>
+          </div> 
+            <a href="Comparisons.html">Comparisons</a>
+            <a href="Data.html">Data</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Header -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
         </div>
-      </div> 
-        <a href="Comparisons.html">Comparisons</a>
-        <a href="Data.html">Data</a>
-     
-        <select id="nav-select">
-          <a href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Home</a>
-          <a href="Wind_Speed.html">Wind Speed</a>
-          <a href="Temperature.html">Temperature</a>
-          <a href="Humidity.html">Humidity</a>
-          <a href="Cloudiness.html">Cloudiness</a>
-          <a href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Home</a>
-          <a href="Comparisons.html">Comparisons</a>
-          <a href="Data.html">Data</a>
-        </select>
-        <div class="clearfix"></div>
-
-
-    </nav>
-    <header class="header">
-      <h1>Global Weather Visualization</h1>
-    </header>
+        <div class="col-md-11">
+          <header class="header">
+            <h1>Global Weather Visualizations</h1>
+          </header>
+        </div>
+      </div>
+    </div>
     <main>
-      <section class="posts">
-        <article class="post">
-          <h3>A visualization dashboard website of weather data pulled from a random list of over 500 cities.</h3>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-11">
+            <h3>A visualization dashboard website of weather data pulled from a random list of over 500 cities.</h3>
           <p>Using data pulled from the OpenWeatherMap API, and a randomly generated list of over 500 cities using the CityPy library, this 
             website will allow you to see and compare results complied using Python, the Pandas library, and MatplotLib.  For each city, four factors were 
             considered: wind speed, temperature, cloudiness, and humidity. The intent was to visualize weather patterns as one moves closer to the equator.
           </p>
-        </article>
-      </section>
+          </div>
+        </div>
+      </div>
     </main>
   </div>
  </div> 
