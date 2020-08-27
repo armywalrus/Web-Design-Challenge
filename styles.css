@@ -21,6 +21,15 @@ p {
   text-align: left;
 }
 
+.tiny {
+  font-size: 10px;
+  display: inline-block;
+  padding: 25px;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: left;
+}
+
 /* Giving our navbar some padding and a background color */
 .navbar {
   height: 75px;
