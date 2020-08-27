@@ -56,26 +56,18 @@
         <div class="col-md-11">
           <nav class="navbar">
             <a class="home" href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Global Weather Visualization</a>
-            <select id="nav-select">
-              <a href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Home</a>
-              <a href="Wind_Speed.html">Wind Speed</a>
-              <a href="Temperature.html">Temperature</a>
-              <a href="Humidity.html">Humidity</a>
-              <a href="Cloudiness.html">Cloudiness</a>
-              <a href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Home</a>
-              <a href="Comparisons.html">Comparisons</a>
-              <a href="Data.html">Data</a>
+            <select id="nav-select" name="menu" onchange="location = this.value;">
+              <option value="">Menu:</option>
+                <option value="https://armywalrus.github.io/Web-Design-Challenge">Home</option>
+                <option value="Wind_Speed.html">Wind Speed</option>
+                <option value="Temperature.html">Temperature</option>
+                <option value="Humidity.html">Humidity</option></a>
+                <option value="Cloudiness.html">Cloudiness</option>
+                <option value="Comparisons.html">Comparisons</option></a>
+                <option value="Data.html">Data</option>
             </select>
             <div class="clearfix"></div>
             <ul>
-              <li>
-              </li>
-              <li>
-              </li>
-              <li>
-              </li>
-              <li>
-              </li>
               </li>
               <li>
               </li>
@@ -102,7 +94,7 @@
               </li>
               <li>
             </ul>
-            <div class="dropdown">
+              <div class="dropdown">
               <button onclick="Dropdown()" class="dropbtn">Plots</button>
               <div id="myDropdown" class="dropdown-content">
                 <a class="active" href="Wind_Speed.html">Wind Speed</a>

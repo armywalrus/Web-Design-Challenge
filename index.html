@@ -55,27 +55,19 @@
       </div>
       <div class="col-md-11">
         <nav class="navbar">
-          <a class="home" href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Global Weather Visualization</a>
-          <select id="nav-select">
-            <a href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Home</a>
-            <a href="Wind_Speed.html">Wind Speed</a>
-            <a href="Temperature.html">Temperature</a>
-            <a href="Humidity.html">Humidity</a>
-            <a href="Cloudiness.html">Cloudiness</a>
-            <a href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Home</a>
-            <a href="Comparisons.html">Comparisons</a>
-            <a href="Data.html">Data</a>
+          <a href="https://armywalrus.github.io/Web-Design-Challenge" target="_blank">Global Weather Visualization</a>
+          <select id="nav-select" name="menu" onchange="location = this.value;">
+            <option value="">Menu:</option>
+              <option value="https://armywalrus.github.io/Web-Design-Challenge">Home</option>
+              <option value="Wind_Speed.html">Wind Speed</option>
+              <option value="Temperature.html">Temperature</option>
+              <option value="Humidity.html">Humidity</option></a>
+              <option value="Cloudiness.html">Cloudiness</option>
+              <option value="Comparisons.html">Comparisons</option></a>
+              <option value="Data.html">Data</option>
           </select>
           <div class="clearfix"></div>
           <ul>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
             </li>
             <li>
             </li>
@@ -165,7 +157,7 @@
           <p>This website was created using a combination of HTML, CSS, and JavaScript. HTML was used to display the data, CSS was used to format 
             the data, and JavaScript was used for the sidebar, dropdown box on the navigation bar, the the popup windows on the visualization pages.
             <br></br>
-            The wetaher visualizations displayed on this site were generated using Python.
+            The weather visualizations displayed on this site were generated using Python.
             A randomly generated list of over 500 cities was pulled using the <a href="https://github.com/wingchen/citipy/" target="_blank">CityPy 
             library</a>. The data for those specific cities was then pulled from the <a href="https://openweathermap.org/api" target="_blank">
             OpenWeatherMap API</a>. After the data was gathered, it was manipulated using the <a href="https://pandas.pydata.org/" target="_blank">
