@@ -22,11 +22,19 @@ p {
   text-align: left;
 }
 
+/* Background image*/
+body {
+  background-image: url('humidity_heatmap.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+
 /* Giving our navbar some padding and a background color */
 .navbar {
   height: 75px;
   padding: 5px;
-  background: #5191fd;
+  background: #4caf50;;
   position: relative;
 }
 
@@ -37,7 +45,7 @@ p {
   margin-right: 5px;
   margin-left: 5px;
   cursor: pointer;
-  background: #5191fd;
+  background: #4caf50;;
   border-radius: 3px;
   position: relative;
 }
@@ -48,7 +56,7 @@ p {
   margin-right: 5px;
   margin-left: 5px;
   cursor: pointer;
-  background: #5191fd;
+  background: #4caf50;;
   border-radius: 3px;
   position: relative;
 }
@@ -81,7 +89,7 @@ p {
 .popup .popuptextone {
   visibility: hidden;
   width: 300px;
-  background-color: #5191fd;
+  background-color: #4caf50;;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -103,7 +111,7 @@ span.popuptextone {
 .popup .popuptexttwo {
   visibility: hidden;
   width: 300px;
-  background-color: #5191fd;
+  background-color: #4caf50;;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -125,7 +133,7 @@ span.popuptexttwo {
 .popup .popuptextthree {
   visibility: hidden;
   width: 300px;
-  background-color: #5191fd;
+  background-color: #4caf50;;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -176,7 +184,7 @@ span.popuptextthree {
 .header {
   height: 100px;
   padding-top: 5px;
-  background: #cdcdcd;
+  
   position: relative;
 }
 
@@ -190,7 +198,7 @@ span.popuptextthree {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #5191fd;
+  background-color: #4caf50;;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -200,7 +208,7 @@ span.popuptextthree {
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #5191fd;
+  background-color: #4caf50;;
   border: none;
 }
 
@@ -240,7 +248,8 @@ span.popuptextthree {
   margin: 0;
   padding: 5px;
   width: 150px;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
+  opacity: 0.65;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -260,7 +269,7 @@ a:hover>div { display: block; }
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #5191fd;
+  background-color: #4caf50;;
   color: white;
   text-decoration: none;
 }
