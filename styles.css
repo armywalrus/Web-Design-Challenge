@@ -32,7 +32,7 @@ p {
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
 .navbar a {
   display: inline-block;
-  padding: 8px;
+  padding: 2px;
   margin-right: 5px;
   margin-left: 5px;
   cursor: pointer;
@@ -266,7 +266,7 @@ span.popuptextthree {
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 212px;
+  width: 150px;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
