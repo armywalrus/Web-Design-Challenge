@@ -144,7 +144,7 @@ span.popuptexttwo {
 .popup .popuptextthree {
   visibility: hidden;
   width: 300px;
-  background-color: #4caf50;;
+  background-color: #4caf50;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -248,7 +248,7 @@ span.popuptextthree {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content a:hover {background-color: #4caf50; color: #ffffff}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
