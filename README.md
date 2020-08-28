@@ -14,4 +14,6 @@ This website consists of 7 pages total, including:
    Uses a Bootstrap grid for the visualizations.
 	
 	
- - A "Data" page that displays a responsive table containing the data used in the visualizations, as a bootstrap component.
+ - A "Data" page that displays a responsive table containing the data used in the visualizations, as a Bootstrap component.
+ 
+ This was website was made using html to display the data, CSS to format the data, and a bit of JavaScript ("Plots" dropdown and popups).
