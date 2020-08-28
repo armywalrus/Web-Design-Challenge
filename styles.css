@@ -1,7 +1,13 @@
-/* Adding font sizes for the h1 and h3 elements*/
+/* Adding font sizes for the h1, h2, and h3 elements*/
 h1 {
   font-size: 80px;
 }
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
 
 h3 {
   font-size: 30px;

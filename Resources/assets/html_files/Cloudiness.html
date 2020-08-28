@@ -110,7 +110,6 @@
       </div>
     </div>
 
-  
     <!-- Header -->
     <div class="container">
       <div class="row">
@@ -146,91 +145,105 @@
     }
     </script>
 
-
 <!-- content - summary paragraph and images -->
 <div class="container">
- <!-- for spacing--> 
-<div class="row">
-  <div class="col-md-12">
-    <br></br>
-  </div>
-</div>
-    
-<div class="row">
-  <div class="col-md-1">
-  </div>
-  <div class="col-md-5">
-      <h3>Summary</h3>
+  <!-- for spacing--> 
+   <div class="row">
+     <div class="col-md-12">
+       <br></br>
+     </div>
+   </div>
+     
+   <div class="row">
+     <div class="col-md-1">
+     </div>
+     <div class="col-md-11">
+         <h3>Summary and Visualizations</h3>
     </div>
+   </div>
 
-    <div class="col-md-6">
-      <h3>Visualizations</h3>
+   <div class="row">
+    <div class="col-md-12">
+      <br></br>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-    </div>
-
-    <div class="col-md-6">
-      <h3 class="click">Click on an image for details.</h3>
-    </div>
-  </div>
-
+   </div>
+ 
+     <div class="row">
+       <div class="col-md-7">
+       </div>
+ 
+     <div class="col-md-5">
+       <h3 class="click">Click on an image for details.</h3>
+     </div>
+   </div>
+ 
 <!-- summary paragraph -->   
-<div class="row">
-  <div class="col-md-1">
-  </div>
+  <div class="row">
+    <div class="col-md-1">
+    </div>
 
-  <div class="col-md-5">
-    <p>The purpose of this project was to pull weather data from the OpenWeather API in order to generate plots that show how weather patterns change as proximity to the equator increases.
-      Four factors were examined: Wind Speed, Temperature, Cloudiness, and Humidity. This shows the comparison of latitude versus cloudiness. 
-      As the visualizations show, cloudiness does not change much as you move closer to the equator.
-    </p>
-  </div>
+    <div class="col-md-6">
+      <p>The purpose of this project was to pull weather data from the OpenWeather API in order to generate plots that show how weather patterns change as proximity to the equator increases.
+        Four factors were examined: Wind Speed, Temperature, Cloudiness, and Humidity. This shows the comparison of latitude versus cloudiness. 
+        As the visualizations show, cloudiness does not change much as you move closer to the equator.
+      </p>
+    </div>
 
 <!-- main image with popup-->  
-  <div class="col-md-6">
-    <h3 class = "image">
+    <div class="col-md-5">
       <div class="popup" onclick="myFunction()"><img class = "responsive" src="Web_Visualizations\latitude_vs_cloudiness.png" alt="Latitude vs. Cloudiness" width="432" height="288">
         <span class="popuptextone" id="myPopup">This visualization shows a slight increase in cloudiness as one gets farther away from the equator.</span>
       </div>
-        <br></br>
-        Latitude vs. Cloudiness as of 7/23/2020</h3>
+        <h3 class = "image">Latitude vs. Cloudiness as of 7/23/2020</h3>
+    </div>
   </div>
 </div>
 
 <!-- for spacing--> 
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <br></br>
+    </div>
+  </div>
+</div>
+
+<!-- supplementary images with popups--> 
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+        <h3 class="supplementary">Comparisons by Northern and Southern Hemisphere</h3>
+    </div>
+  </div>
+
 <div class="row">
   <div class="col-md-12">
     <br></br>
   </div>
 </div>
 
-<!-- supplementary images with popups--> 
-<div class="row">
-  <div class="col-md-3">
-  </div>
-  <div class="col-md-3">
-  </div>
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
 
-  <div class="col-md-3">
-    <h3 class = "image">
+    <div class="col-sm-4">
       <div class="popup" onclick="myFunctionTwo()"><img class = "responsive" src="Web_Visualizations\northern_latitude_vs_cloudiness.png" alt="Northern Hemisphere" width="432" height="288">
         <span class="popuptexttwo" id="myPopupTwo">This visualization shows that cloudiness slightly increases as one moves further north.</span>
       </div>
-          Latitude vs. Cloudiness: Northern Hemisphere as of 7/23/2020</h3>
+        <h3 class = "image">Latitude vs. Cloudiness: Northern Hemisphere as of 7/23/2020</h3>
     </div>
 
-      <div class="col-md-3">
-        <h3 class = "image">
-          <div class="popup" onclick="myFunctionThree()"><img class = "responsive" src="Web_Visualizations\southern_latitude_vs_cloudiness.png" alt="Southern Hemisphere" width="432" height="288">
-            <span class="popuptextthree" id="myPopupThree">This visualization demonstrates that the Southern Hemisphere shows less clouds.</span>
-          </div>
-          Latitude vs. Cloudiness: Southern Hemisphere as of 7/23/2020</h3>
+    <div class="col-sm-4">
+      <div class="popup" onclick="myFunctionThree()"><img class = "responsive" src="Web_Visualizations\southern_latitude_vs_cloudiness.png" alt="Southern Hemisphere" width="432" height="288">
+        <span class="popuptextthree" id="myPopupThree">This visualization demonstrates that the Southern Hemisphere shows less clouds.</span>
       </div>
+        <h3 class = "image">Latitude vs. Cloudiness: Southern Hemisphere as of 7/23/2020</h3>
+    </div>
+
+    <div class="col-sm-2">
     </div>
   </div>
+</div>
 </main>
 </div>
 
