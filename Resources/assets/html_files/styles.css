@@ -38,24 +38,11 @@ body {
 
 /* Giving navbar some padding and a background color */
 .navbar {
-  height: 75px;
-  padding: 5px;
+  padding: 10px;
   background: #4caf50;;
-  position: relative;
 }
 
 /* Inline-block elements in the navbar so we can have multiple on the same line.*/
-.navbar a {
-  display: inline-block;
-  padding: 2px;
-  margin-right: 5px;
-  margin-left: 5px;
-  cursor: pointer;
-  background: #4caf50;;
-  border-radius: 3px;
-  position: relative;
-}
-
 .navbar li {
   display: inline-block;
   padding: 8px;
@@ -261,7 +248,7 @@ span.popuptextthree {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-/* The side navigation menu */
+/* Sidebar navigation menu */
 .sidebar {
   margin: 0;
   padding: 5px;
@@ -361,8 +348,8 @@ div.content {
   .navbar {
     background: #5191fd;
   }
+
   #nav-select {
     visibility: visible;
   }
 }
-
